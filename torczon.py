@@ -68,8 +68,6 @@ def solve(f_user=[], par=[], x0=[], xmin=[],
         for i in range(Niter):
             S, y, ynew = improve_S(S=S, device_f=f)
             if ynew < best_y:
-                #if abs(ynew-best_y)<1e-8:
-                #    continue
                 best_y = ynew
                 best_x = S[0, :]
 
