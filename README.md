@@ -2,9 +2,9 @@
 
 Torczon algorithm is a derivative free algorithm initially designed for unconstrained nonlinear optimization problems. 
 Torczon algorithm is a version of the simplex algorithm (not that used in Linear Programming problems) which avoids the 
-Collapse of the polygone of solution that the algorithm updates.
+Collapse of the polygone of solutions that is iteratively updated through the iterations.
 
-This is a modified version of this algorithm that incorporates:
+This is a modified version of the Torczon algorithm that incorporates:
 
 - Explicitly handling of hard box constraints on the decision variables
 - Penalty-based handling of other (non box-like) constraints
