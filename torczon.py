@@ -1,5 +1,9 @@
 import numpy as np
 
+# This is a simple implementation of a modified version of the torczon 
+# derivative free optimization algorithm. 
+
+
 def improve_S(S=[],  device_f=[]):
 
     # S is a matrix of dimension (n+1)x(n)

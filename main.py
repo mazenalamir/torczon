@@ -1,6 +1,9 @@
 from torczon import solve
 import numpy as np
 
+# This is the test file for the torczon module. 
+# it contains three constrained optimization examples.
+
 # Example 1
 #=============
 # Assume a cost function that need some class instance to be defined 
@@ -47,8 +50,9 @@ Nguess = 10
 Niter = 50
 rho = 1e6
 x0 = [0.1,0.1]
+dx = 1.0
 
-R = solve(f2dex, rho, x0, [0.001,0.001], [10, 10], Nguess, Niter)
+R = solve(f2dex, rho, x0, [0.001,0.001], [10, 10], Nguess, Niter, initial_box_width=dx)
 
 print("Example 2")
 print("----------")
