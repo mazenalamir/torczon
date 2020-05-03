@@ -8,6 +8,7 @@ This is a modified version of the Torczon algorithm that incorporates:
 
 - Explicitly handling of hard box constraints on the decision variables
 - Penalty-based handling of other (non box-like) constraints
+- mutiple initial guess option for global optimization.
 
 The main appealing feature of this family of algorithm lies in the fact that the cost function and the constraints need 
 not to be differentiable. The counterpart is that this algorithm is not fitted to very high dimensional problems. 
