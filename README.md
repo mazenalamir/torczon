@@ -15,3 +15,30 @@ not to be differentiable. The counterpart is that this algorithm is not fitted t
 
 I personally use it intensively in solving real-life problems arising in **Parameterized Nonlinear Model Predictive Control** 
 problems. 
+
+## Required packages
+
+- numpy 
+
+## Usage
+ 
+- Define the cost function to be optimized, the cost might embed soft constraint definition via constraint penalty (the penalty can be a part of the variable p that can be any python object or variable. 
+
+```python
+def f(x,p):
+    
+    return ..
+```
+
+- Call the solver using 
+
+```python
+solve(f_user=f, par=p, x0=x0, xmin=xmin, 
+          xmax=xmax, Nguess=Nguess, Niter=Niter, initial_box_width=0.1)
+```
+where 
+
+- x0 is the initial guess (for the first guess)
+- xmin, xmax: the box of admissible values
+- Niter: the number of iterations by single guess 
+- Nguess: the number of initial guesses (randomly sampled using uniform distribution inside the hypercube defined by xmin and xmax)
