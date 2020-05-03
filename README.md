@@ -43,8 +43,17 @@ solve(f_user=f,
 ```
 where 
 
-- **x0** is the initial guess (for the first guess)
-- **xmin, xmax**: the box of admissible values
-- **Niter**: the number of iterations by single guess 
-- **Nguess**: the number of initial guesses (randomly sampled using uniform distribution inside the hypercube defined by xmin and xmax)
-- **initial_box_width**: the values of the initial steps around each initial guess to bild the polygone of the torczon algorithm. 
+- **x0**
+the initial guess (for the first guess)
+
+- **xmin, xmax** 
+the box of admissible values
+
+- **Niter**: 
+the number of iterations by single guess 
+
+- **Nguess**: 
+the number of initial guesses (randomly sampled using uniform distribution inside the hypercube defined by xmin and xmax)
+
+- **initial_box_width**: 
+the values of the initial steps around each initial guess to bild the polygone of the torczon algorithm. 
