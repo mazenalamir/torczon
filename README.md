@@ -56,4 +56,4 @@ the number of iterations by single guess
 the number of initial guesses (randomly sampled using uniform distribution inside the hypercube defined by xmin and xmax)
 
 - **initial_box_width**: 
-the values of the initial steps around each initial guess to bild the polygone of the torczon algorithm. 
+the amplitude of the initial steps around each initial guess to bild the polygone of the torczon algorithm. 
