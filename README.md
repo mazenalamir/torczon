@@ -33,12 +33,18 @@ def f(x,p):
 - Call the solver using 
 
 ```python
-solve(f_user=f, par=p, x0=x0, xmin=xmin, 
-          xmax=xmax, Nguess=Nguess, Niter=Niter, initial_box_width=0.1)
+solve(f_user=f, 
+      par=p, x0=x0, 
+      xmin=xmin,
+      xmax=xmax, 
+      Nguess=Nguess, 
+      Niter=Niter, 
+      initial_box_width=0.1)
 ```
 where 
 
-- x0 is the initial guess (for the first guess)
-- xmin, xmax: the box of admissible values
-- Niter: the number of iterations by single guess 
-- Nguess: the number of initial guesses (randomly sampled using uniform distribution inside the hypercube defined by xmin and xmax)
+- **x0** is the initial guess (for the first guess)
+- **xmin, xmax**: the box of admissible values
+- **Niter**: the number of iterations by single guess 
+- **Nguess**: the number of initial guesses (randomly sampled using uniform distribution inside the hypercube defined by xmin and xmax)
+- **initial_box_width**: the values of the initial steps around each initial guess to bild the polygone of the torczon algorithm. 
