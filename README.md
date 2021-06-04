@@ -16,6 +16,10 @@ not to be differentiable. The counterpart is that this algorithm is not fitted t
 I personally use it intensively in solving real-life problems arising in **Parameterized Nonlinear Model Predictive Control** 
 problems. 
 
+**Code citation**
+
+[![DOI](https://zenodo.org/badge/260138021.svg)](https://zenodo.org/badge/latestdoi/260138021)
+
 ## Required packages
 
 - numpy 
