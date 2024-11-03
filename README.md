@@ -54,7 +54,7 @@ solve(f_user=f,
 where 
 
 - ```x0```
-the initial guess (for the first guess)
+the initial guess (for the first guess, this should be **inside the admissible hypercube**)
 
 - ```xmin, xmax``` 
 the box of admissible values
